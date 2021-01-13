@@ -84,8 +84,8 @@
 			await liff.sendMessages([
 				{
 					"type": "sticker",
-					"stickerId": 1,
-					"packageId": 1
+					"stickerId": 11,
+					"packageId": 11
 				}
 			])
 			alert("Message sent")
@@ -125,19 +125,19 @@
     }
 
     async function main() {
-      alert("อบากรู้ว่าคืออะไรอะดิ ลองกดปุ่มต่าๆ ดูนะ :)")
+      alert("อบากรู้ว่าคืออะไรอะดิ ลองกดปุ่มต่างๆ ดูนะคะ :)")
       await liff.init({ liffId: "1655570554-9rNOYNWe" })
-	  //document.getElementById("isLoggedIn").append(liff.isLoggedIn())
-		//if (liff.isLoggedIn()
+	  document.getElementById("isLoggedIn").append(liff.isLoggedIn())
+		if (liff.isLoggedIn()
 		{
 		  getEnvironment()
 		  getUserProfile()
 		  getContext()
 		  getFriendship()
 		} 
-		//else
+		else
 		{
-		//	liff.login()
+			liff.login()
 		}
 		  // createUniversalLink()
     }

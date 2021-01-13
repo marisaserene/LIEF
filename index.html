@@ -70,13 +70,13 @@
 
     function getContext() {
     }
-
+	
     async function getUserProfile() {
 		const profile = await liff.getProfile()
 		document.getElementById("pictureUrl").src = profile.pictureUrl
-		document.getElementById("userId").src = profile.userId
-		document.getElementById("statusMessage").src = profile.statusMessage
-		document.getElementById("displayName").src = profile.displayName
+		document.getElementById("userId").append(profile.userId)
+		document.getElementById("statusMessage").append(profile.statusMessage)
+		document.getElementById("displayName").append(profile.displayName)
     }
 
     function getEnvironment() {
@@ -95,7 +95,7 @@
     }
 
     async function main() {
-      alert("Halooo")
+      alert("get bacic profile")
       await liff.init({ liffId: "1655570554-9rNOYNWe" })
        getEnvironment()
        getUserProfile()

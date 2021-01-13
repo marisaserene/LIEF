@@ -48,6 +48,12 @@
     }
 
     async function shareMsg() {
+		await liff.shareTargetPicker([
+		{
+			"type": "text",
+			"text": "This is msg was sent by ShareTargetPicker"
+		}
+		])
     }
 
     function logOut() {
@@ -119,7 +125,7 @@
     }
 
     async function main() {
-      alert("อบากรู้ว่าคืออะไรอะดิ :)")
+      alert("อบากรู้ว่าคืออะไรอะดิ ลองกดปุ่มต่าๆ ดูนะ :)")
       await liff.init({ liffId: "1655570554-9rNOYNWe" })
 	  //document.getElementById("isLoggedIn").append(liff.isLoggedIn())
 		//if (liff.isLoggedIn()

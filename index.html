@@ -60,6 +60,9 @@
     }
 
     function openWindow() {
+		liff.openWindow({
+		url: "https://line.me/",
+		external: true})
     }
 
     async function getFriendship() {
@@ -70,7 +73,7 @@
 			await liff.sendMessages([
 				{
 					"type": "sticker",
-					"stickerId" : 1,
+					"stickerId": 1,
 					"packageId": 1
 				}
 			])

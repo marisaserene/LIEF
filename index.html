@@ -77,6 +77,7 @@
 		document.getElementById("userId").append(profile.userId)
 		document.getElementById("statusMessage").append(profile.statusMessage)
 		document.getElementById("displayName").append(profile.displayName)
+		document.getElementById("decodedIDToken").append(liff.getDecodeIDToken().email)
     }
 
     function getEnvironment() {
@@ -95,7 +96,7 @@
     }
 
     async function main() {
-      alert("get bacic profile")
+      alert("get email")
       await liff.init({ liffId: "1655570554-9rNOYNWe" })
        getEnvironment()
        getUserProfile()
